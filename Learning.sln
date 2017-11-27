@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host", "WebApplication1\Host.csproj", "{0465507E-90D4-4659-A5FC-38EEB13EFE5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{E35926B9-23E9-4D4C-817E-ACF7B380061F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Processor", "Dacess\Processor.csproj", "{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{BC8A338D-E2A1-4C7F-8409-62D509E974A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{18539396-A5F4-4E0B-8E89-9A40DDA04DCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{FF50AFE9-7309-4E2E-A3CA-82CC147123B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Work", "Work", "{6BA9B482-181A-4C89-9630-07DEC57248F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{050662E7-6C6B-4B87-AFF8-1C96BC3AE6E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0465507E-90D4-4659-A5FC-38EEB13EFE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0465507E-90D4-4659-A5FC-38EEB13EFE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0465507E-90D4-4659-A5FC-38EEB13EFE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0465507E-90D4-4659-A5FC-38EEB13EFE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35926B9-23E9-4D4C-817E-ACF7B380061F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35926B9-23E9-4D4C-817E-ACF7B380061F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35926B9-23E9-4D4C-817E-ACF7B380061F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35926B9-23E9-4D4C-817E-ACF7B380061F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18539396-A5F4-4E0B-8E89-9A40DDA04DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18539396-A5F4-4E0B-8E89-9A40DDA04DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18539396-A5F4-4E0B-8E89-9A40DDA04DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18539396-A5F4-4E0B-8E89-9A40DDA04DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF50AFE9-7309-4E2E-A3CA-82CC147123B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF50AFE9-7309-4E2E-A3CA-82CC147123B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF50AFE9-7309-4E2E-A3CA-82CC147123B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF50AFE9-7309-4E2E-A3CA-82CC147123B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0465507E-90D4-4659-A5FC-38EEB13EFE5B} = {BC8A338D-E2A1-4C7F-8409-62D509E974A8}
+		{E35926B9-23E9-4D4C-817E-ACF7B380061F} = {6BA9B482-181A-4C89-9630-07DEC57248F2}
+		{F6E9DA9C-BC0E-4C52-9759-1FA00F3EE9C2} = {6BA9B482-181A-4C89-9630-07DEC57248F2}
+		{18539396-A5F4-4E0B-8E89-9A40DDA04DCE} = {050662E7-6C6B-4B87-AFF8-1C96BC3AE6E4}
+		{FF50AFE9-7309-4E2E-A3CA-82CC147123B3} = {050662E7-6C6B-4B87-AFF8-1C96BC3AE6E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FA6BE8C-E20D-41BB-9313-8C075D1D861F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.60.21:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebApplication1\\Host.csproj
+		SccProjectTopLevelParentUniqueName1 = Learning.sln
+		SccProjectName1 = WebApplication1
+		SccLocalPath1 = WebApplication1
+		SccProjectUniqueName2 = Service\\Service.csproj
+		SccProjectTopLevelParentUniqueName2 = Learning.sln
+		SccProjectName2 = Service
+		SccLocalPath2 = Service
+		SccProjectUniqueName3 = Dacess\\Processor.csproj
+		SccProjectTopLevelParentUniqueName3 = Learning.sln
+		SccProjectName3 = Dacess
+		SccLocalPath3 = Dacess
+		SccProjectUniqueName4 = Entity\\Entity.csproj
+		SccProjectTopLevelParentUniqueName4 = Learning.sln
+		SccProjectName4 = Entity
+		SccLocalPath4 = Entity
+		SccProjectUniqueName5 = Enums\\Enums.csproj
+		SccProjectTopLevelParentUniqueName5 = Learning.sln
+		SccProjectName5 = Enums
+		SccLocalPath5 = Enums
+	EndGlobalSection
+EndGlobal
