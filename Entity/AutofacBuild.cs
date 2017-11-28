@@ -7,7 +7,15 @@ namespace Entity
         /// <summary>
         /// 全局
         /// </summary>
-        public static IContainer ApplicationContainer { get; set; }
+        private static IContainer ApplicationContainer = null;
+
+        public static void Set(IContainer _IContainer)
+        {
+            if (ApplicationContainer == null)
+            {
+                ApplicationContainer = _IContainer;
+            }
+        }
 
         public static T Get<T>()
         {

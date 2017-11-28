@@ -1,10 +1,8 @@
 ﻿using Entity;
+using IService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Processor.Database;
-using Service;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace WebApplication1.Controllers
@@ -12,10 +10,10 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
         private readonly ConnectionStrings _connectionStrings;
-        private readonly MovieListerService _movieListerService;
+        private readonly IMovieListerService _movieListerService;
         private readonly ILogger _logger;
 
-        public HomeController(IOptions<ConnectionStrings> connectionStrings, ILogger<HomeController> logger, MovieListerService movieListerService)
+        public HomeController(IOptions<ConnectionStrings> connectionStrings, ILogger<HomeController> logger, IMovieListerService movieListerService)
         {
             this._connectionStrings = connectionStrings.Value;
             this._movieListerService = movieListerService;
@@ -25,8 +23,8 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             // Autofa
-            var manager = AutofacBuild.Get<IDatabase>();
-            string resultAutofac = manager.Select("SELECT * FORM USER");
+            var manager = AutofacBuild.Get<IDatabaseService>();
+            string resultAutofac = manager.Run();
 
             Task.Run(() => LogWorking("HomeController.Index"));
             return View();

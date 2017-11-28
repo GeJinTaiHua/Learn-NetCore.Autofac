@@ -10,9 +10,10 @@ namespace Host
             builder.RegisterType<DatabaseManager>();
             builder.RegisterType<SqlDatabase>().As<IDatabase>();
 
-            // 注册Service层的所有名称以Service结束类
+            // 注册IService、Service层的
             var services = System.Reflection.Assembly.Load("Service");
-            builder.RegisterAssemblyTypes(services);
+            var iservices = System.Reflection.Assembly.Load("IService");
+            builder.RegisterAssemblyTypes(iservices, services).AsImplementedInterfaces();
         }
     }
 }

@@ -19,6 +19,7 @@
     <ProjectReference Include="..\Dacess\Processor.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />
     <ProjectReference Include="..\Enums\Enums.csproj" />
+    <ProjectReference Include="..\IService\IService.csproj" />
   </ItemGroup>
 
 </Project>

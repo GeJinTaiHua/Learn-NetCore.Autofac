@@ -1,9 +1,10 @@
 ﻿using Autofac;
+using IService;
 using Processor.Database;
 
 namespace Service
 {
-    public class DatabaseService
+    public class DatabaseService : IDatabaseService
     {
         public string Run()
         {

@@ -1,10 +1,11 @@
 ﻿using Autofac;
+using IService;
 using Processor.MovieLister;
 using System;
 
 namespace Service
 {
-    public class MovieListerService
+    public class MovieListerService : IMovieListerService
     {
         public void Run()
         {

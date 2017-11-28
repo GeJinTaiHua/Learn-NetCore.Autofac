@@ -64,7 +64,7 @@ namespace WebApplication1
             builder.RegisterModule<AutofacModule>();
             builder.Populate(services);
             this.ApplicationContainer = builder.Build();
-            AutofacBuild.ApplicationContainer = this.ApplicationContainer;
+            AutofacBuild.Set(this.ApplicationContainer);
             return new AutofacServiceProvider(this.ApplicationContainer);
         }
 
